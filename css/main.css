@@ -49,16 +49,22 @@
     font-size: 16px;
     padding: 15px 30px;
     color: #ff169e;
+    display: inline-block;
 }
 
 .primary_button:hover {
 	background-color: #f3ff77;
+	color: #ff169e;
+}
+
+p.transform_0_9:hover {
+	    transition-duration: .3s; 
+    transition-property: transform;
 	-moz-transform: scale(0.9);
 	-webkit-transform: scale(0.9);
 	-o-transform: scale(0.9);
 	-ms-transform: scale(0.9);
 	transform: scale(0.9);
-	color: #ff169e;
 }
 
 p.text_design,
