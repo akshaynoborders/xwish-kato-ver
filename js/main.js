@@ -24,29 +24,31 @@
 
 jQuery('document').ready(function($){
 
-	jQuery('.single_slide').slick({
+	jQuery('.slick_carousel').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
 		dots: true,
 		arrows: true,
 		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-left'></i></button>",
-		nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right'></i></button>"
+		nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right'></i></button>",
+		responsive: [
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		  ]
   	});
-
-  	$('.single_slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  	   $('.slick_content').removeClass('fadeInUp');        
-  	   $('.slick_content').addClass('d-none');        
-       $('.slick_bg').removeClass('bg_zoomout');        
-       $('.slick_bg').addClass('bg_zoomin');        
-       // $('.slick_bg').addClass('bg_zoomout');        
-       // $('.slick_bg').removeClass('bg_zoomout');        
-       // $('.slick_bg').removeClass('bg_zoomin');        
-    });
-
-    $('.single_slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
-       $('.slick_bg').removeClass('bg_zoomin');        
-       $('.slick_bg').addClass('bg_zoomout');        
-    	 $('.slick_content').removeClass('d-none');        
-       $('.slick-active .slick_content').addClass('fadeInUp');        
-    });
     
 }); 
 
@@ -74,7 +76,7 @@ jQuery('document').ready(function($){
 
 
   	// About Section
-  	$('.about .section_heading,.projects .section_heading').each(function() {
+  	$('.about .section_heading, .projects .section_heading, .examples .section_heading').each(function() {
       if (isScrolledIntoView(this) === true) { 
         jQuery(this).children('.txt').addClass('fadeInUp');
         jQuery(this).children('.bg_sign').show().addClass('fadeInDown');
