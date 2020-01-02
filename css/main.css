@@ -57,6 +57,12 @@
 	color: #ff169e;
 }
 
+.about .row {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
 p.transform_0_9:hover {
 	    transition-duration: .3s; 
     transition-property: transform;
@@ -154,7 +160,8 @@ a.navbar-brand img {
 	height: 900px;
 	background-attachment: fixed;
 	max-height: 100vh;
-	position: relative
+	position: relative;
+	background-repeat:no-repeat;
 }
 
 .backgroundoverlay {
@@ -573,7 +580,8 @@ section.examples {
 }
 
 .slick_carousel .slick-prev {
-    right: 20px;
+    left: 20px;
+    z-index: 9;
 }
 
 .slick-dots li {
@@ -755,14 +763,6 @@ section.examples .section_heading .txt {
 }
 
 @media all and (max-width: 812px)  {
-	.xwish_banner {
-		max-height: 600px;
-		min-height:100vh;
-		background-position: top center;
-		-webkit-background-size: auto 100vh;
-		-moz-background-size: auto 100vh;
-		-o-background-size: auto 100vh;
-	}
 }
 
 @media all and (max-width: 786px)  {
@@ -894,6 +894,63 @@ section.examples .section_heading .txt {
 	nav.gl-header .menu-global li.fixed_right a.btn {
 	    padding: 10px 8px !important;
 	}
+
+	/*New */
+	.xwish_banner {
+		background-size: auto 740px;
+		background-position: top center;
+
+		/*Safari Fixes*/
+		-webkit-background-size: auto 740px;
+
+		/*Mozilla and Opera*/
+		-moz-background-size: auto 740px;
+		-o-background-size: auto 740px;
+		max-height: unset;
+		height: 740px;
+		background-attachment: unset;
+	}
+
+	.xwish_banner .banner_box {
+	    top: 190px;
+	}
+	.xwish_banner .heading1 {
+	    font-size: 100px;
+	    line-height: 100px;
+	}
+
+	.xwish_banner .heading2 {
+	    font-size: 52px;
+	    line-height: 52px;
+	}
+
+	.xwish_banner .banner_box {
+	    width: 100%;
+	}
+
+	.xwish_banner .heading3 {
+		font-size: 19px;
+    	line-height: 1.6em;
+	}
+
+	.xwish_banner .description {
+	    font-size: 20px;
+	}
+
+	section.examples .section_heading .txt,
+	.section_heading .txt {
+	    font-size: 18px;
+	    font-weight: normal;
+	}
+
+	section.about p.desc {
+	    font-size: 12px;
+	    padding: 0 15px;
+	}
+
+	section.examples {
+		padding: 50px 0 30px 0;
+	}
 }
 
 
@@ -931,18 +988,6 @@ section.examples .section_heading .txt {
 	    padding: 8px;
 	}
 
-	.xwish_banner {
-	    max-width: 100%;
-	    background-size: auto 100%;
-	    background-position: top center;
-
-		/*Safari Fixes*/
-		-webkit-background-size: auto 100vh;
-
-		/*Mozilla and Opera*/
-		-moz-background-size: auto 100vh;
-		-o-background-size: auto 100vh;
-	}
  }
 
 @media all and (max-width: 460px)  {
@@ -1108,10 +1153,6 @@ section.examples .section_heading .txt {
 
 
 @media all and (max-width: 340px)  {
-
-	.xwish_banner .banner_box {
-	    top: 138px;
-	}
 
 	.campagin_list_page .row {
 	    padding: 0;
