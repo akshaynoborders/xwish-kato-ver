@@ -557,7 +557,7 @@ section.examples {
 }
 
 .slick_carousel .slick_slide img {
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
 } 
 
 .slick_carousel .slick_slide h2 {
@@ -763,6 +763,10 @@ section.examples .section_heading .txt {
 }
 
 @media all and (max-width: 812px)  {
+	.section_heading .txt {
+	    font-weight: normal;
+	    letter-spacing: normal;
+	}
 }
 
 @media all and (max-width: 786px)  {

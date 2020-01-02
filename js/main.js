@@ -34,14 +34,14 @@ jQuery('document').ready(function($){
 		nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right'></i></button>",
 		responsive: [
 		    {
-		      breakpoint: 600,
+		      breakpoint: 1025,
 		      settings: {
 		        slidesToShow: 2,
-		        slidesToScroll: 2
+		        slidesToScroll: 1
 		      }
 		    },
 		    {
-		      breakpoint: 480,
+		      breakpoint: 769,
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1
