@@ -767,6 +767,49 @@ section.examples .section_heading .txt {
 	    font-weight: normal;
 	    letter-spacing: normal;
 	}
+
+	.xwish_banner {
+		max-height: unset;
+		height: 740px;
+		background-attachment: unset;
+	}
+
+	.xwish_banner .banner_box {
+	    top: 190px;
+	}
+	.xwish_banner .heading1 {
+	    font-size: 100px;
+	    line-height: 100px;
+	}
+
+	.xwish_banner .heading2 {
+	    font-size: 52px;
+	    line-height: 52px;
+	}
+
+	.xwish_banner .banner_box {
+	    width: 100%;
+	}
+
+	.xwish_banner .heading3 {
+		font-size: 19px;
+    	line-height: 1.6em;
+	}
+
+	.xwish_banner .description {
+	    font-size: 20px;
+	}
+
+	section.examples .section_heading .txt,
+	.section_heading .txt {
+	    font-size: 18px;
+	    font-weight: normal;
+	}
+
+	section.about p.desc {
+	    font-size: 12px;
+	    padding: 0 15px;
+	}
 }
 
 @media all and (max-width: 786px)  {
@@ -913,43 +956,6 @@ section.examples .section_heading .txt {
 		max-height: unset;
 		height: 740px;
 		background-attachment: unset;
-	}
-
-	.xwish_banner .banner_box {
-	    top: 190px;
-	}
-	.xwish_banner .heading1 {
-	    font-size: 100px;
-	    line-height: 100px;
-	}
-
-	.xwish_banner .heading2 {
-	    font-size: 52px;
-	    line-height: 52px;
-	}
-
-	.xwish_banner .banner_box {
-	    width: 100%;
-	}
-
-	.xwish_banner .heading3 {
-		font-size: 19px;
-    	line-height: 1.6em;
-	}
-
-	.xwish_banner .description {
-	    font-size: 20px;
-	}
-
-	section.examples .section_heading .txt,
-	.section_heading .txt {
-	    font-size: 18px;
-	    font-weight: normal;
-	}
-
-	section.about p.desc {
-	    font-size: 12px;
-	    padding: 0 15px;
 	}
 
 	section.examples {
