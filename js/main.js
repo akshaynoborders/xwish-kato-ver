@@ -59,21 +59,12 @@ jQuery('document').ready(function($){
     var docViewBottom = docViewTop + $(window).height();
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    var output = ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    return output;
   }
-
-  function isScrolledIntoProject(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  }
-
 
   // If element is scrolled into view, fade it in
   $(window).scroll(function() {
-
 
   	// About Section
   	$('.about .section_heading, .projects .section_heading, .examples .section_heading, .commonsection .section_heading').each(function() {
@@ -88,18 +79,20 @@ jQuery('document').ready(function($){
      }
     });
 
-    // Project Section
-     $('.projects .row').each(function() {
-      	if (isScrolledIntoProject(this) === true) { 
-
-      		jQuery(this).children('div').children('.project_box').show();
-
- 	  	    jQuery(this).find('.fadeInLeft_js').each(function() {
+    // Common Section
+     jQuery('.commonsection .row').each(function() {
+      	if (isScrolledIntoView(this) === true) { 
+     
+      	    jQuery(this).find('.fadeInLeft_js').each(function() {
 		        jQuery(this).addClass('fadeInLeft');
 		    });
 
 		    jQuery(this).find('.fadeInUp_js').each(function() {
 		        jQuery(this).addClass('fadeInUp');
+		    });
+
+		    jQuery(this).find('.fadeInDown_js').each(function() {
+		        jQuery(this).addClass('fadeInDown');
 		    });
 
 		 	jQuery(this).find('.fadeInRight_js').each(function() {
@@ -108,6 +101,14 @@ jQuery('document').ready(function($){
 
 		    jQuery(this).find('.fadeInUp_js').each(function() {
 		        jQuery(this).addClass('fadeInUp');
+		    });
+
+		    jQuery(this).find('.bounceInRight_js').each(function() {
+		        jQuery(this).addClass('bounceInRight');
+		    });
+
+	        jQuery(this).find('.bounceInLeft_js').each(function() {
+		        jQuery(this).addClass('bounceInLeft');
 		    });
 
  	  	} 
