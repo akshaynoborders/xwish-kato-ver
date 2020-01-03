@@ -955,6 +955,17 @@ section.usage_flow {
 	}
 }
 
+@media all and (max-width: 767px)  {
+
+	.usage_flow .uf_container_right,
+	.usage_flow .uf_container_left {
+		width: 100%;
+		text-align: center;
+		border: unset;
+		padding-bottom: 40px;
+	}
+
+}
 
 @media all and (max-width: 600px)  {
 	.projects-search .search-header .block.sort a {
@@ -1073,6 +1084,15 @@ section.usage_flow {
 
 	.nav-item.signup_btn, .nav-item.login_btn, .nav-item.logout_btn {
 	    padding: 8px;
+	}
+
+	.usage_flow .uf_container_right, .usage_flow .uf_container_left {
+	    padding: 40px 0;
+	}
+
+	.usage_flow .btn {
+	    width: 100%;
+	    max-width: 400px;
 	}
 
  }
