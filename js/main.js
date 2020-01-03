@@ -24,6 +24,13 @@
 
 jQuery('document').ready(function($){
 
+	jQuery('.about_more, .more-menu').hover(function(){
+		jQuery('.more-menu').addClass('active');  
+	}, function() {
+		jQuery('.more-menu').removeClass('active');
+	});
+
+
 	jQuery('.slick_carousel').slick({
 		infinite: true,
 		slidesToShow: 3,
@@ -68,7 +75,7 @@ jQuery('document').ready(function($){
 
   	// About Section
   	$('.about .section_heading, .projects .section_heading, .examples .section_heading, .commonsection .section_heading').each(function() {
-      if (isScrolledIntoView(this) === true) { 
+       if (isScrolledIntoView(this) === true) { 
         jQuery(this).children('.txt').addClass('fadeInUp');
         jQuery(this).children('.bg_sign').show().addClass('fadeInDown');
 	    }
@@ -78,10 +85,12 @@ jQuery('document').ready(function($){
         jQuery(this).addClass('fadeInUp');
      }
     });
+ 
 
     // Common Section
-     jQuery('.commonsection .row').each(function() {
-      	if (isScrolledIntoView(this) === true) { 
+     jQuery('.commonsection *').each(function() {
+     	if (isScrolledIntoView(this) === true) { 
+
      
       	    jQuery(this).find('.fadeInLeft_js').each(function() {
 		        jQuery(this).addClass('fadeInLeft');
