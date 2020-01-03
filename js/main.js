@@ -76,7 +76,7 @@ jQuery('document').ready(function($){
 
 
   	// About Section
-  	$('.about .section_heading, .projects .section_heading, .examples .section_heading').each(function() {
+  	$('.about .section_heading, .projects .section_heading, .examples .section_heading, .commonsection .section_heading').each(function() {
       if (isScrolledIntoView(this) === true) { 
         jQuery(this).children('.txt').addClass('fadeInUp');
         jQuery(this).children('.bg_sign').show().addClass('fadeInDown');

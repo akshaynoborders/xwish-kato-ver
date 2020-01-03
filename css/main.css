@@ -38,7 +38,7 @@
 }
 
 .navbar {
-	background: rgba(0, 0, 0, .8)!important
+	background: rgba(224, 40, 144, 0.5)!important;
 }
 
 .primary_button {
@@ -273,6 +273,7 @@ a.navbar-brand img {
 
 section.about,
 section.examples,
+section.commonsection,
 section.projects {
 	padding: 100px 0 10px 0;
 	overflow: hidden
@@ -609,6 +610,64 @@ section.examples .section_heading .txt {
     line-height: 1;
     font-weight: normal;
     letter-spacing: normal;
+}
+
+/*Usage Flow Section */
+/*font-family: 'Old Standard TT', serif;*/
+
+section.usage_flow {
+	padding-bottom: 100px;
+	padding-top: 160px !important;
+}
+
+.usage_flow .uf_container_left {
+	padding: 40px 40px 90px 0px;
+	border-right: 1px solid #ff169e;
+}
+
+.usage_flow .uf_container_right {
+	padding: 40px 0 90px 40px;
+	border-left: 1px solid #ff169e;
+}
+
+.usage_flow .heading h3{
+	font-family: "Old Standard TT", Sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 3px;
+    color: #54595f;
+    margin-bottom: 55px;
+}
+
+.usage_flow .title, .usage_flow .title h4{
+	font-family: "Nunito Sans", Sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1em;
+	color: #ff169e;
+	margin-bottom: 20px;
+}
+
+.usage_flow .uf_image {
+	margin-bottom: 20px;
+}
+
+.usage_flow .uf_down_arrow {
+	margin-bottom: 20px;
+	color: #ff169e;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.usage_flow .section_heading .txt {
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.usage_flow .section_heading {
+	margin-bottom: 100px;
 }
 
 
