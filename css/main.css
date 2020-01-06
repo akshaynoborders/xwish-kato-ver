@@ -57,6 +57,10 @@
 	color: #ff169e;
 }
 
+.primary_button i, .primary_button svg {
+    display: none;
+}
+
 .about .row {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -977,6 +981,16 @@ section.why_buttons.commonsection {
 }
 
 @media all and (max-width: 768px)  {
+
+	section.why_xwish .section_heading {
+	    margin-bottom: 40px;
+	}
+
+	section.why_buttons .primary_button,
+	section.usage_flow .primary_button {
+	    width: 300px;
+	    padding: 15px 10px;
+	}
 
 	.campagin_list_page .container {
 		background: #fff !important; 
