@@ -24,6 +24,8 @@
 
 jQuery('document').ready(function($){
 
+	// jQuery('.bounceInLeft_js,.bounceInRight_js,.fadeInLeft_js,.fadeInRight_js, .fadeInUp_js, .fadeInDown_js').hide();
+
 	jQuery('.about_more, .more-menu').hover(function(){
 		jQuery('.more-menu').addClass('active');  
 	}, function() {
@@ -88,7 +90,7 @@ jQuery('document').ready(function($){
  
 
     // Common Section
-     jQuery('.commonsection *').each(function() {
+     jQuery('*').each(function() {
      	if (isScrolledIntoView(this) === true) { 
 
      
@@ -108,16 +110,17 @@ jQuery('document').ready(function($){
 		        jQuery(this).addClass('fadeInRight');
 		    });
 
-		    jQuery(this).find('.fadeInUp_js').each(function() {
-		        jQuery(this).addClass('fadeInUp');
-		    });
-
 		    jQuery(this).find('.bounceInRight_js').each(function() {
 		        jQuery(this).addClass('bounceInRight');
 		    });
 
 	        jQuery(this).find('.bounceInLeft_js').each(function() {
 		        jQuery(this).addClass('bounceInLeft');
+		    });
+
+		    jQuery(this).find('.card-title').each(function(){
+		    	jQuery(this).removeClass('fadeInUp');
+		    	jQuery(this).delay( 5000 ).addClass('fadeInUp');
 		    });
 
  	  	} 
