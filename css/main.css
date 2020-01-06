@@ -718,13 +718,21 @@ section.why_xwish .card img {
     transition: all 0.3s ease-in-out;
 }	
 
-/*section.why_xwish .card img:hover {
+section.why_xwish .card img:hover {
 	animation-name: elementor-animation-hang-sink,elementor-animation-hang;
 }	
 
-@keyframes elementor-animation-hang{0%{transform:translateY(8px)}
+@keyframes elementor-animation-hang{
+	0% {
+		transform:translateY(8px)
+	}
+}
 
-@keyframes  elementor-animation-hang-sink{100%{transform:translateY(8px)}}*/
+@keyframes  elementor-animation-hang-sink{
+	100% {
+		transform:translateY(8px)
+	}
+}
 
 section.why_xwish .card .card-body {
     padding-right:0px;
