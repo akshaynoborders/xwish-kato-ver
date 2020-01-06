@@ -692,6 +692,10 @@ section.why_xwish {
     padding-bottom: 40px;
 }
 
+section.why_xwish .section_heading {
+	margin-bottom: 110px;
+}
+
 section.why_xwish .bgoverlay {
 	background-color: #ffffff;
     opacity: 0.73;
