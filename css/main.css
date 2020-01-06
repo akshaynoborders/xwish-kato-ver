@@ -253,14 +253,14 @@ a.navbar-brand img {
 
 .section_heading .bg_sign {
 	font-family: "Dr Sugiyama", Sans-serif;
-	font-size: 160px;
+	font-size: 130px;
 	letter-spacing: 1.7px;
 	color: #f7afc8;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin-left: -60px;
-	margin-top: -100px;
+	margin-top: -80px;
 	z-index: 0;
 	display: none;
 	font-weight: 400
@@ -272,7 +272,11 @@ a.navbar-brand img {
 	width: 100%;
 	display: block;
 	color: #54595f;
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-weight: normal;
+	font-family: "Nunito Sans", Sans-serif;
+	font-size: 28px;
+	letter-spacing: 10px;
 }
 
 section.about,
@@ -680,6 +684,71 @@ section.usage_flow {
 	margin-bottom: 100px;
 }
 
+section.why_xwish {
+	background-attachment: fixed;
+	background-image: url('../images/portrait-787522.jpg');
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+section.why_xwish .bgoverlay {
+	background-color: #ffffff;
+    opacity: 0.73;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+section.why_xwish .card {
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+section.why_xwish .card img {
+    animation-duration: .3s,1.5s;
+    animation-delay: 0s,.3s;
+    animation-timing-function: ease-out,ease-in-out;
+    animation-iteration-count: 1,infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal,alternate;
+    transition: all 0.3s ease-in-out;
+}	
+
+/*section.why_xwish .card img:hover {
+	animation-name: elementor-animation-hang-sink,elementor-animation-hang;
+}	
+
+@keyframes elementor-animation-hang{0%{transform:translateY(8px)}
+
+@keyframes  elementor-animation-hang-sink{100%{transform:translateY(8px)}}*/
+
+section.why_xwish .card .card-body {
+    padding-right:0px;
+    padding-left: 0px;
+}
+
+section.why_xwish p.card-text {
+    color: #54595f;
+    line-height: 1.3em;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+section.why_xwish .card-title {
+    color: #0d84e5;
+    font-size: 27px;
+    letter-spacing: 10px;
+    font-weight: normal;
+}
+
+section.why_buttons.commonsection {
+	padding-top: 50px; 
+	margin-bottom: 100px;
+}
 
 @media all and (max-width: 1024px)  {
 	nav.gl-header .menu-global li a {
